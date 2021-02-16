@@ -21,7 +21,8 @@ body {
   margin: 0px;
   background: #dae1e7;
   padding-top: 180px;
-  height: 100vh;
+  padding-bottom: 30px;
+  min-height: 100vh;
   box-sizing: border-box;
   border: solid 20px #fff;
 }
