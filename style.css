@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+  font-family: "oklahoma-regular";
+  src: url("https://raw.githubusercontent.com/onewaypath/css/master/fonts/oklahoma_normal-webfont.woff")
+    format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "open-sans-regular";
+  src: url("https://raw.githubusercontent.com/onewaypath/css/master/fonts/open-sans-regular.ttf");
+  font-display: swap;
+}
+
+/* basic **/
+
+html {
+  background-color: white;
+}
+
+body {
+  text-align: center;
+  margin: 20px;
+  background: #dae1e7;
+  padding-top: 200px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #030004;
+}
+
+body h1:nth-child(1) {
+  color: #ca972b;
+  font-size: 62px;
+  text-transform: uppercase;
+  font-family: oklahomaregular, arial;
+  font-weight: normal;
+}
+
+/** Group header **/
+body h1:nth-child(2) {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: oklahomaregular, arial;
+  font-weight: normal;
+  line-height: 0px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/** Group header- left line **/
+body h1:nth-child(2):before {
+  content: "";
+  display: block;
+  width: 130px;
+  margin-left: 60px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+}
+
+/** Group header- right line **/
+body h1:nth-child(2):after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 2px;
+  background: #000;
+  margin-left: 410px;
+  position: absolute;
+}
+
+p {
+  font-size: 21px;
+  max-width: 650px;
+  margin: 80px auto 30px auto;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* menu + icons **/
+body > h2:nth-child(0) {
+  display: none;
+}
+
+h2 {
+  display: inline-block;
+  width: 25%;
+  max-width: 300px;
+}
+
+h2 img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 110px;
+}
+
+h2 a {
+  display: block;
+  width: 100%;
+  padding-top: 180px;
+  text-align: center;
+  text-decoration: none;
+  font-family: oklahomabold, arial;
+  color: #030004;
+  font-size: 18px;
+}
+
+h2 a:hover {
+  color: #ca972b;
+}
+
+h2 a img:nth-child(2) {
+  opacity: 0;
+}
+
+h2 a:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+h2 a:hover img:nth-child(1) {
+  opacity: 0;
+}
+
+h2 img {
+  margin-top: -130px;
+}
+
+/** hide the footer as per requested **/
+footer {
+  display: none;
+}
