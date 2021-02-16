@@ -60,15 +60,16 @@ body h1:nth-child(2) {
   font-family: oklahomaregular, arial;
   font-weight: normal;
   line-height: 0px;
-  max-width: 400px;
+  max-width: 450px;
   margin: auto;
+  color: #000;
 }
 
 /** Group header- left line **/
 body h1:nth-child(2):before {
   content: "";
   display: block;
-  width: 100px;
+  width: 130px;
   margin-left: 0px;
   height: 2px;
   background: #000;
@@ -79,10 +80,10 @@ body h1:nth-child(2):before {
 body h1:nth-child(2):after {
   content: "";
   display: block;
-  width: 130px;
+  width: 140px;
   height: 2px;
   background: #000;
-  margin-left: 310px;
+  margin-left: 320px;
   position: absolute;
 }
 
@@ -154,13 +155,13 @@ footer {
   }
 
   body h1:nth-child(2)::before {
-    width: 70px;
-    margin-left: 70px;
+    width: 90px;
+    margin-left: 80px;
   }
 
   body h1:nth-child(2):after {
-    width: 70px;
-    margin-left: 260px;
+    width: 80px;
+    margin-left: 280px;
   }
 
   p {
@@ -179,5 +180,20 @@ footer {
 
   h2 img {
     border: solid 2px #000;
+  }
+}
+
+@media all and (max-width: 490px) {
+  body h1:nth-child(2) {
+    max-width: 250px;
+  }
+
+  body h1:nth-child(2)::before {
+    width: 70px;
+    margin-left: 0px;
+  }
+
+  body h1:nth-child(2):after {
+    margin-left: 180px;
   }
 }
