@@ -16,15 +16,14 @@
 
 /* basic **/
 
-html {
-  background-color: white;
-}
-
 body {
   text-align: center;
-  margin: 20px;
+  margin: 0px;
   background: #dae1e7;
-  padding-top: 200px;
+  padding-top: 180px;
+  height: 100vh;
+  box-sizing: border-box;
+  border: solid 20px #fff;
 }
 
 p {
@@ -47,7 +46,7 @@ body h1:nth-child(2) {
   font-family: oklahomaregular, arial;
   font-weight: normal;
   line-height: 0px;
-  max-width: 600px;
+  max-width: 400px;
   margin: auto;
 }
 
@@ -55,8 +54,8 @@ body h1:nth-child(2) {
 body h1:nth-child(2):before {
   content: "";
   display: block;
-  width: 130px;
-  margin-left: 60px;
+  width: 100px;
+  margin-left: 0px;
   height: 2px;
   background: #000;
   position: absolute;
@@ -69,7 +68,7 @@ body h1:nth-child(2):after {
   width: 130px;
   height: 2px;
   background: #000;
-  margin-left: 410px;
+  margin-left: 310px;
   position: absolute;
 }
 
@@ -102,7 +101,7 @@ h2 img {
 h2 a {
   display: block;
   width: 100%;
-  padding-top: 180px;
+  padding-top: 120px;
   text-align: center;
   text-decoration: none;
   font-family: oklahomabold, arial;
